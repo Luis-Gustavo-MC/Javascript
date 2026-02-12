@@ -36,3 +36,15 @@ console.log(`${a}` + "\n" + `${b}`)
 console.log(5>20)
 console.log(5<20)
 console.log(typeof (5<20))
+
+// 9 - Comparações
+console.log(10>=5) //true
+console.log(10<5) //false
+console.log(10==5) //false
+console.log(10==10) //true
+console.log(10=='10') //true
+
+// 10 - Idêntico
+console.log(10=='10') //true
+console.log(10==='10') //false
+console.log(10!=='10') //true
