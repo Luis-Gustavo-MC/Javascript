@@ -17,3 +17,10 @@ console.log(typeof NaN)
 // 4 - Strings
 console.log("Isso é uma string")
 console.log(typeof "Isso é uma string")
+
+// 5 - Special characters
+console.log("A\nB")
+console.log("A\tB")
+
+// 6 - Concatenação
+console.log("S" + 10 + "A")
