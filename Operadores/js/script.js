@@ -24,3 +24,12 @@ console.log("A\tB")
 
 // 6 - Concatenação
 console.log("S" + 10 + "A")
+
+// 7 - Interpolação
+let v = 10.00;
+console.log(`Eu tenho R$ ${v}`)
+
+// 8 - Booleans
+let a = true;
+let b = false;
+console.log(`${a}` + "\n" + `${b}`)
