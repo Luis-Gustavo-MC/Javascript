@@ -33,3 +33,6 @@ console.log(`Eu tenho R$ ${v}`)
 let a = true;
 let b = false;
 console.log(`${a}` + "\n" + `${b}`)
+console.log(5>20)
+console.log(5<20)
+console.log(typeof (5<20))
