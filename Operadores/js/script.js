@@ -48,3 +48,12 @@ console.log(10=='10') //true
 console.log(10=='10') //true
 console.log(10==='10') //false
 console.log(10!=='10') //true
+
+// 11 - empty values
+console.log(typeof null , typeof undefined)
+
+// 12 - mudança de tipos
+console.log(5* null)
+console.log("teste" * "opa")
+console.log("10" + 1)
+console.log("10" - 1)
