@@ -30,3 +30,28 @@ console.log(Math.ceil(5.15))
 console.log("A")
 console.error("Erro!")
 console.warn("Aviso!")
+
+//  6 - IF and Else
+const x = 10
+if(x>5){
+    console.log("S")
+}else{
+    console.log("N")
+}
+
+const user = 'João'
+if(user === 'João'){
+    console.log("S")
+}else{
+    console.log("N")
+}
+
+// 7 - Else IF
+const n = 'a' // 10
+if(n<10){
+    console.log("A")
+}else if(n>10){
+    console.log("B")
+}else{
+    console.log("C")
+}
