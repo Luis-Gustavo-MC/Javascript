@@ -69,4 +69,22 @@ do{
     num++
 }while(num<10)
 
+// 10 - For
+for(let num = 10; num<=20; num++){
+    console.log(num)
+}
 
+// 11 - Break
+for(let num = 10; num<=20; num++){
+    console.log(num)
+    if(num === 12){
+        break
+    }
+}
+// 12 - Continue
+for(let num = 10; num<=20; num++){
+    console.log(num)
+    if(num === 12){
+        continue
+    }
+}
