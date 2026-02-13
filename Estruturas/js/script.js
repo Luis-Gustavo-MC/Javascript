@@ -13,3 +13,10 @@ console.log(typeof idade)
 
 let a = 5, b = 4, c = 10
 console.log(a+b+c)
+
+// 2 - Prompt
+nome = prompt("Escreva seu nome: ")
+console.log(nome)
+
+//3 - Alert
+alert("Teste")
