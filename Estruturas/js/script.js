@@ -55,3 +55,18 @@ if(n<10){
 }else{
     console.log("C")
 }
+
+// 8 - While
+let num = 0
+while(num<10){
+    console.log(num)
+    num++
+}
+// 9 - Do While
+num = 0
+do{
+    console.log(num)
+    num++
+}while(num<10)
+
+
