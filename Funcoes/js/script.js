@@ -37,3 +37,24 @@ function escopoAninhado(){
 }
 console.log(m)
 escopoAninhado()
+
+// 5- Array function
+const testArrow = () =>{
+    console.log("Essa é uma arrow function")
+}
+testArrow()
+const parOuImpar = (n) =>{
+    if(n%2==0){
+        console.log("PAR!")
+        return
+    }else if(n%2!=0){
+        console.log("Impar!")
+        return
+    }else{
+        console.error("ERRO!")
+    }
+}
+parOuImpar(0)
+
+const raizQuadrada = (x) => x*x
+console.log(raizQuadrada(10))
