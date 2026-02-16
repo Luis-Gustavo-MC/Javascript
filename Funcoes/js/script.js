@@ -38,7 +38,7 @@ function escopoAninhado(){
 console.log(m)
 escopoAninhado()
 
-// 5- Array function
+// 5 - Array function
 const testArrow = () =>{
     console.log("Essa é uma arrow function")
 }
@@ -54,7 +54,24 @@ const parOuImpar = (n) =>{
         console.error("ERRO!")
     }
 }
-parOuImpar(0)
+parOuImpar(11)
 
 const raizQuadrada = (x) => x*x
 console.log(raizQuadrada(10))
+
+// 7 - Parametro Opcional
+const multiplicacao = function(m,n){
+    if(n===undefined){
+        return m*2
+    }else{
+        return m*n
+    }
+}
+console.log(multiplicacao(2))
+console.log(multiplicacao(2,4))
+
+// 8 - default
+const greeting = (nome, greet = 'ola') => {
+    console.log(greet + ", " + nome)
+}
+greeting('luis')
