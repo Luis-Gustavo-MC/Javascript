@@ -1,5 +1,5 @@
 // 1 - Array
-const list = [1,2,3,4,5]
+let list = [1,2,3,4,5]
 console.log(list)
 console.log(typeof list)
 
@@ -120,3 +120,9 @@ const subArray = array.slice(0,2)
 
 console.log(array)
 console.log(subArray)
+
+// 15 - forEach
+list = [1,2,3,4,5]
+list.forEach(element => {
+    console.log(element)
+})
