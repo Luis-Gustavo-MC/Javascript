@@ -89,7 +89,7 @@ users.forEach(element => {
 });
 
 // 11 - push e pop
-const array = ["a","b","c"]
+let array = ["a","b","c"]
 array.push("d")
 console.log(array)
 
@@ -99,3 +99,24 @@ console.log(array)
 const itemRemovido = array.pop()
 console.log(itemRemovido)
 console.log(array)
+
+// 12 - Shift and Unshit
+array.shift()
+console.log(array)
+
+array.unshift("a")
+console.log(array)
+
+// 13 - indexOf and lastIndexOf
+const myElements = ['Morango' , 'Maça', 'Abacate' , 'Pêra', 'Abacate']
+
+console.log(myElements.indexOf('Maça'))
+console.log(myElements.indexOf('Abacate'))
+console.log(myElements.lastIndexOf('Abacate'))
+
+// 14 - Slice
+array = ["a","b","c"]
+const subArray = array.slice(0,2)
+
+console.log(array)
+console.log(subArray)
