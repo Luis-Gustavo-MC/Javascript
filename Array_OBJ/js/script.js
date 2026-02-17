@@ -78,3 +78,24 @@ const a ={
 const b = a 
 console.log(a)
 console.log(b)
+
+// 7 - Loops em arrays
+const users = ['luis', 'matheus' , "pedro"]
+for(let x=0; x<users.length; x++){
+    console.log(users[x])
+}
+users.forEach(element => {
+    console.log(element)
+});
+
+// 11 - push e pop
+const array = ["a","b","c"]
+array.push("d")
+console.log(array)
+
+array.pop()
+console.log(array)
+
+const itemRemovido = array.pop()
+console.log(itemRemovido)
+console.log(array)
