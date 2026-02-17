@@ -52,3 +52,29 @@ console.log(car)
 
 delete car.KM
 console.log(car)
+
+const obj = {
+    a: "teste",
+    b: true
+}
+console.log(obj instanceof Object)
+
+const obj2 = {
+    c:[]
+}
+Object.assign(obj2, obj)
+console.log(obj2)
+
+console.log(Object.keys(obj))
+console.log(Object.keys(obj2))
+console.log(Object.keys(car))
+
+console.log(Object.entries(car))
+
+// 6 - Mutação
+const a ={
+    name: "Mutação"
+}
+const b = a 
+console.log(a)
+console.log(b)
