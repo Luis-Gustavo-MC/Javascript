@@ -151,3 +151,11 @@ console.log(newNumber)
 const frase = "O rato roeu a roupa do rei de Roma"
 const arrayFrase = frase.split(" ")
 console.log(arrayFrase)
+
+// 21 - Join
+const fraseDeNovo = arrayFrase.join(" ")
+console.log(fraseDeNovo)
+
+// 22 - Repeat
+const palavra = "\n Teste"
+console.log(palavra.repeat(5))
