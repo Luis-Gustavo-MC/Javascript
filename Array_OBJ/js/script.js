@@ -136,4 +136,18 @@ console.log(brands.includes("Ferrari"))
 brands.reverse()
 console.log(brands)
 
+// 18 - Trim
+const trimTest = "    teste \n"
+console.log(trimTest)
+console.log(trimTest.trim())
 
+// 19 - PadStart
+const testePadStart = "1"
+const newNumber = testePadStart.padStart(4, "0")
+console.log(testePadStart)
+console.log(newNumber)
+
+// 20 - Slit
+const frase = "O rato roeu a roupa do rei de Roma"
+const arrayFrase = frase.split(" ")
+console.log(arrayFrase)
