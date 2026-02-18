@@ -126,3 +126,14 @@ list = [1,2,3,4,5]
 list.forEach(element => {
     console.log(element)
 })
+
+// 16 - Inclues
+let brands = ['BMW', 'VW', 'Fiat']
+console.log(brands.includes("Fiat"))
+console.log(brands.includes("Ferrari"))
+
+// 17 - Reverse
+brands.reverse()
+console.log(brands)
+
+
