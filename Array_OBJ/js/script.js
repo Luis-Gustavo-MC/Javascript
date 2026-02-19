@@ -179,3 +179,22 @@ const somaInfinita2 = (...args) => {
     return total;
 }
 console.log(somaInfinita2(1,2,3,4,5,6,7,2))
+
+// 25 - Destructuring obj
+const userDetails = {
+    firstName:'Luis',
+    lastName:'Gustavo',
+    job:'Dev'
+}
+
+const{firstName,lastName,job} = userDetails
+//rename 
+console.log(firstName, lastName,job)
+const{ firstName: primeiroNome, asd} = userDetails
+console.log(firstName)
+
+// 26 Destructuring array
+const myList = ["Avião", "Carro", "Moto"]
+const[veiculoA, veiculoB, veiculoC] = myList
+
+console.log(veiculoA,veiculoB,veiculoC)
