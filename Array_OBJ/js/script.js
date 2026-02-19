@@ -198,3 +198,19 @@ const myList = ["Avião", "Carro", "Moto"]
 const[veiculoA, veiculoB, veiculoC] = myList
 
 console.log(veiculoA,veiculoB,veiculoC)
+
+// 27 - JSON
+const myJson = '{"name": "Luis", "age": 23, "Skills": ["Java", "JavaScript"]}'
+
+// Json para Objeto
+const myObj = JSON.parse(myJson)
+console.log(myObj)
+
+// Objeto para Json
+const myNewJson = JSON.stringify(myObj)
+console.log(myNewJson)
+
+// Bad JSON
+const badJson = '{"name": Luis}'
+const badObj = JSON.parse(badJson)
+console.log(badObj)
