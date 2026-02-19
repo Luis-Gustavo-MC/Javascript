@@ -159,3 +159,23 @@ console.log(fraseDeNovo)
 // 22 - Repeat
 const palavra = "\n Teste"
 console.log(palavra.repeat(5))
+
+// 23 - Rest Operator
+const somaInfinita = (...args) => {
+    let total = 0
+    for(let x = 0; x< args.length; x++){
+        total += args[x]
+    }
+    return total
+}
+console.log(somaInfinita(1,2,3,4,5,6,7,2))
+
+// 24 - for of
+const somaInfinita2 = (...args) => {
+    let total = 0;
+    for(num of args){
+        total += num;
+    }
+    return total;
+}
+console.log(somaInfinita2(1,2,3,4,5,6,7,2))
