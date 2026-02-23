@@ -144,3 +144,18 @@ const audi = new Carro(4)
 console.log(audi.getRodas())
 audi.setRodas(5)
 console.log(audi.getRodas())
+
+// 12 - Herança
+class Mamiferos{
+    constructor(patas){
+        this.patas = patas
+    }
+}
+class Lobo extends Mamiferos{
+    constructor(patas , nome){
+        super(patas,patas)
+        this.nome = nome
+    }
+}
+const shark = new Lobo(4, "Shark")
+console.log(shark)
