@@ -126,3 +126,21 @@ const boeing = new Aviao("boeing", 10)
 
 console.log(boeing)
 console.log(boeing[asas])
+
+// 11 - Getters and Setters
+class Carro{
+    constructor(rodas){
+        this.rodas = rodas
+    }
+    setRodas(rodas){
+        this.rodas = rodas
+    }
+    getRodas(){
+        return this.rodas
+    }
+}
+
+const audi = new Carro(4)
+console.log(audi.getRodas())
+audi.setRodas(5)
+console.log(audi.getRodas())
