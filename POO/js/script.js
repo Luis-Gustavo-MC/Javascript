@@ -72,7 +72,7 @@ Cachorro.prototype.uivar = function(){
 }
 husky.uivar()
 
-// Classes es6
+// 7 - Classes es6
 class Gato{
     constructor(nome,raca){
         this.nome = nome
@@ -84,3 +84,30 @@ const lufy = new Gato("lufy" , "Vira-Lata")
 
 console.log(lufy)
 lufy.miar()
+
+// 8 - +Sobre Classes
+class Caminhao{
+    constructor(eixos, cor){
+        this.eixos = eixos
+        this.cor = cor
+    }
+
+    descreverCaminhao(){
+        console.log(`Este caminhão tem ${this.eixos} e é da cor ${this.cor}`)
+    }
+}
+const scania = new Caminhao(6, "vermelha")
+console.log(scania)
+scania.descreverCaminhao()
+
+// 9 - Override
+class Humano{
+    constructor(nome,idade){
+        this.nome = nome
+        this.idade = idade
+    }
+}
+const luis = new Humano("Luis" , 23)
+console.log(luis)
+Humano.prototype.idade = "Não Definida"
+console.log(Humano.prototype.idade)
