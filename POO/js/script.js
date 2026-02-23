@@ -34,3 +34,35 @@ const myObj2 = Object.create(myObj)
 console.log(myObj2)
 
 console.log(Object.getPrototypeOf(myObj2) === myObj)
+
+// 3 - Classes Basicas
+const cachorro = {
+    reca: null, 
+    patas: 4,
+}
+const pastorAlemao = Object.create(cachorro)
+pastorAlemao.reca = "pastor alemaõ"
+
+console.log(pastorAlemao)
+console.log(pastorAlemao.patas)
+
+// 4 - Construct
+function criarCachorro(nome , raca){
+    const cachorro = Object.create({})
+    cachorro.nome = nome
+    cachorro.raca = raca
+    return cachorro
+}
+const Bob = criarCachorro("Bob", "bulldog")
+console.log(Bob)
+
+// 5 - New
+
+class Cachorro {
+    constructor(nome, raca) {
+        this.nome = nome
+        this.raca = raca
+    }
+}
+const husky = new Cachorro("ozzy", "husky")
+console.log(husky)
