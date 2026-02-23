@@ -111,3 +111,18 @@ const luis = new Humano("Luis" , 23)
 console.log(luis)
 Humano.prototype.idade = "Não Definida"
 console.log(Humano.prototype.idade)
+
+// 10 - Symbol
+class Aviao{
+    constructor(marca, turbinas){
+        this.marca = marca
+        this.turbinas = turbinas
+    }
+}
+const asas = Symbol()
+Aviao.prototype[asas] = 2
+
+const boeing = new Aviao("boeing", 10)
+
+console.log(boeing)
+console.log(boeing[asas])
