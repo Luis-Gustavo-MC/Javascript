@@ -57,7 +57,6 @@ const Bob = criarCachorro("Bob", "bulldog")
 console.log(Bob)
 
 // 5 - New
-
 class Cachorro {
     constructor(nome, raca) {
         this.nome = nome
@@ -66,3 +65,22 @@ class Cachorro {
 }
 const husky = new Cachorro("ozzy", "husky")
 console.log(husky)
+
+// 6 - Metodos na função Construtora
+Cachorro.prototype.uivar = function(){
+    console.log("Auuu")
+}
+husky.uivar()
+
+// Classes es6
+class Gato{
+    constructor(nome,raca){
+        this.nome = nome
+        this.raca = raca
+    }
+}
+Gato.prototype.miar = function() {console.log("miau!")}
+const lufy = new Gato("lufy" , "Vira-Lata")
+
+console.log(lufy)
+lufy.miar()
