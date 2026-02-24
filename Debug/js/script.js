@@ -87,3 +87,11 @@ try{
     console.log("Rodou")
 }
 
+// 6 - Assertion
+function checkArray(arr){
+    if(arr.length === 0){
+        throw new Error("O array precisa ter elementos")
+    }else{
+        console.log("O array tem elementos" + arr.length)
+    }
+}
