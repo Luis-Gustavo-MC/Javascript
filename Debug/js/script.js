@@ -43,7 +43,6 @@ console.log("Teste")
 //debugger
 
 // 4 - tratamento de dados
-
 function checkNumber(n){
     const result = Number(n)
 
@@ -59,4 +58,32 @@ checkNumber(5)
 checkNumber("10")
 checkNumber({})
 checkNumber("Teste")
+
+// 5 - Exceptions
+// 5.1 Throw
+let x = 10
+
+if(x!=11){
+    throw new Error("O valor de x não pode ser 11!")
+}
+
+// 5.2 try catch
+try{
+    const soma = x + y
+}catch(error){
+    console.log("Erro no programa: " + error)
+}
+
+
+// 5.3 Finally
+try{
+    const value = checkNumber()
+    if(!value){
+        throw new Error("Valores invalidos")
+    }
+}catch(error){
+    console.log("ERRO" + error)
+}finally{
+    console.log("Rodou")
+}
 
