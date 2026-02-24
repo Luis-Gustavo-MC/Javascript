@@ -32,7 +32,7 @@ if(c == 1){
     c = d + 2 
 }
 
-debugger
+//debugger
 
 for(let i = 0; i<d; i++){
     c = d + 2
@@ -40,4 +40,23 @@ for(let i = 0; i<d; i++){
 
 console.log("Teste")
 
-debugger
+//debugger
+
+// 4 - tratamento de dados
+
+function checkNumber(n){
+    const result = Number(n)
+
+    if(Number.isNaN(result)){
+        console.log("Valor Incorreto!")
+        return
+    }
+    console.log("Valor correto!")
+    return result;
+}
+
+checkNumber(5)
+checkNumber("10")
+checkNumber({})
+checkNumber("Teste")
+
