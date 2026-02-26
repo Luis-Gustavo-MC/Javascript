@@ -75,3 +75,9 @@ console.log(footer.offsetWidth)
 console.log(footer.clientHeight)
 console.log(footer.clientWidth)
 
+// 6 - Posição do elemento
+const product1  = products[0]
+console.log(product1.getBoundingClientRect())
+
+
+
