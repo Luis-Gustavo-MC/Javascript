@@ -53,3 +53,14 @@ const h3 = document.createElement("h3")
 h3.appendChild(myText)
 
 mainContainer.appendChild(h3)
+
+// 5 - Atributos
+const firstLink = navLinks.querySelector("a")
+console.log(firstLink)
+
+firstLink.setAttribute("href" , "https://www.google.com/")
+
+console.log(firstLink.getAttribute("href"))
+
+firstLink.setAttribute("target" , "_blank")
+
