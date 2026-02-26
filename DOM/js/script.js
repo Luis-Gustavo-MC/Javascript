@@ -64,3 +64,14 @@ console.log(firstLink.getAttribute("href"))
 
 firstLink.setAttribute("target" , "_blank")
 
+// 6 - altura e largura
+const footer = document.querySelector("footer")
+
+//Com borda
+console.log(footer.offsetHeight)
+console.log(footer.offsetWidth)
+
+// Sem borda
+console.log(footer.clientHeight)
+console.log(footer.clientWidth)
+
