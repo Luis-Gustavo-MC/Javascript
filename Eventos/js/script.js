@@ -58,3 +58,21 @@ document.addEventListener("keyup", (e)=>{
 document.addEventListener("keydown", (e)=>{
     console.log(`tecla: ${e.key}`)
 })
+
+// 1.7.1 Eventos de mouse
+const mouse = document.querySelector("#mouse")
+mouse.addEventListener("mousedown" , () => {
+    console.log("Presssionou")
+})
+mouse.addEventListener("mouseup" , () => {
+    console.log("Soltou")
+})
+mouse.addEventListener("dblclick" , () => {
+    console.log("duplo")
+})
+
+// 1.7.2 Mouse move
+document.addEventListener("mousemove" , (e)=>{
+    //console.log(`No eixo x${e.x}`)
+    //console.log(`No eixo y${e.y}`)
+})
