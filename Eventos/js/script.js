@@ -43,3 +43,18 @@ btnInsiderContainer.addEventListener("click", (e)=>{
     e.stopPropagation()
     console.log("Evento2")
 })
+
+// 1.5 Removendo evento padrao
+const a = document.querySelector("a")
+a.addEventListener("click" , (e) =>{
+    e.preventDefault()
+    console.log("aaaa")
+})
+
+// 1.6 Evento de tecla
+document.addEventListener("keyup", (e)=>{
+    console.log(`tecla: ${e.key}`)
+})
+document.addEventListener("keydown", (e)=>{
+    console.log(`tecla: ${e.key}`)
+})
