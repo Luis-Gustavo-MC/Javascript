@@ -13,7 +13,7 @@ body{
     background-color: #34db7a;
 }
 .container.active{
-    height: 800px;
+    height: 600px;
 }
 .container{
     background-color: #fff;
