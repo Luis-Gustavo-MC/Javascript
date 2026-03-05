@@ -99,6 +99,8 @@ header nav{background-color: #333;}
     font-size: 1.1rem;
     padding: .8rem 1.4rem;
     align-items: center;
+    max-width: 5rem;
+    margin: auto auto;
 }
 
 /* Imagem */
@@ -164,4 +166,31 @@ header nav{background-color: #333;}
 }
 .selected{
     outline: 2px solid #43a1ff;
+}
+
+/* Responsividade */
+@media (max-width<=480px) {
+    #navbar li{
+        display: none;
+    }
+    #navbar #logo{
+        display: flex;
+    }
+    #bottom-header-links a{
+        display: none;
+    }
+    #bottom-header-li{
+        display: flex;
+    }
+    #main-content{
+        padding: 2rem;
+        overflow: hidden;
+    }
+    #main-content{
+        padding: 2rem;
+        overflow: hidden;
+    }
+    #main-content #subtitle{
+        font-size: 3rem;
+    }
 }
