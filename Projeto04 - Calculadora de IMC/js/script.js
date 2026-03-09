@@ -43,7 +43,12 @@ const heightInput = document.querySelector("#height")
 const weightInput = document.querySelector("#weight")
 const calcBtn = document.querySelector("#calc-btn")
 const clearBtn = document.querySelector("#clear-btn")
+const imcNumber = document.querySelector("#imc-number span")
 
+const imcInfo = document.querySelector("#imc-info span")
+const backBtn = document.querySelector("#back-btn")
+const calcContainer = document.querySelector("#calc-container");
+const resultContainer = document.querySelector("#result-container");
 // Functions
 function createTable(data){
     data.forEach((item)=>{
@@ -81,6 +86,11 @@ function calcImc(weight, height){
   return imc  
 }
 
+function showOrHideResults(){
+  calcContainer.classList.toggle("hide")
+  resultContainer.classList.toggle("hide")
+}
+
 [heightInput, weightInput].forEach((el) => {
   el.addEventListener("input", (e) => {
     const updatedValue = validDigits(e.target.value)
@@ -93,7 +103,7 @@ createTable(data)
 
 //Eventos
 calcBtn.addEventListener('click' , (e) =>{
-  e.preventDefault
+  e.preventDefault()
   const weight = +weightInput.value.replace("," , ".")
   const height = +heightInput.value.replace("," , ".")
   if(!weight || !height){return}
@@ -106,12 +116,16 @@ calcBtn.addEventListener('click' , (e) =>{
       info = item.info
     }
   })
-  alert(info)
   if(!info) return
+
+  imcNumber.innerText = imc
+  imcInfo.innerText = info
+
+  showOrHideResults()
 })
 
 clearBtn.addEventListener("click" , (e) =>{
-  e.preventDefault
+  e.preventDefault()
   cleanInputs()
 })
 
