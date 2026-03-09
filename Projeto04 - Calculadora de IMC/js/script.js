@@ -39,7 +39,6 @@ const data = [
 
 // Elementos
 const imcTable = document.querySelector("#imc-table")
-
 const heightInput = document.querySelector("height")
 const weightInput = document.querySelector("weight")
 const calcBtn = document.querySelector("#calc-btn")
@@ -68,6 +67,27 @@ function createTable(data){
         imcTable.appendChild(div)
     })
 }
+
+function cleanInputs(){
+  heightInput.value = ""
+  weightInput.value = ""
+}
+
+function validDigits(text){
+  return text.replace(/[^0-9,]/g, "")
+}
+
+//Eventos
+[heightInput, weightInput].forEach((el)=>{
+  el.addEventListener("input", (e)=>{
+    const updateValue = validDigits(e.target.value)
+    e.target.value = updateValue
+  })
+})
+clearBtn.addEventListener("click" , (e) =>{
+  e.preventDefault
+  cleanInputs()
+})
 
 // Inicialization
 createTable(data)
