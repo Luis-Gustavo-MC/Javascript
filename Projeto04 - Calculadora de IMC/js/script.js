@@ -39,15 +39,14 @@ const data = [
 
 // Elementos
 const imcTable = document.querySelector("#imc-table")
-const heightInput = document.querySelector("height")
-const weightInput = document.querySelector("weight")
+const heightInput = document.querySelector("#height")
+const weightInput = document.querySelector("#weight")
 const calcBtn = document.querySelector("#calc-btn")
 const clearBtn = document.querySelector("#clear-btn")
 
 // Functions
 function createTable(data){
     data.forEach((item)=>{
-
         const div = document.createElement("div")
         div.classList.add("table-data")
 
@@ -77,17 +76,43 @@ function validDigits(text){
   return text.replace(/[^0-9,]/g, "")
 }
 
-//Eventos
-[heightInput, weightInput].forEach((el)=>{
-  el.addEventListener("input", (e)=>{
-    const updateValue = validDigits(e.target.value)
-    e.target.value = updateValue
+function calcImc(weight, height){
+  const imc = (weight / (height*height)).toFixed(1)
+  return imc  
+}
+
+[heightInput, weightInput].forEach((el) => {
+  el.addEventListener("input", (e) => {
+    const updatedValue = validDigits(e.target.value)
+    e.target.value = updatedValue
   })
 })
+
+// Inicialization
+createTable(data)
+
+//Eventos
+calcBtn.addEventListener('click' , (e) =>{
+  e.preventDefault
+  const weight = +weightInput.value.replace("," , ".")
+  const height = +heightInput.value.replace("," , ".")
+  if(!weight || !height){return}
+  const imc = calcImc(weight,height)
+  console.log(imc)
+
+  let info
+  data.forEach((item) =>{
+    if(imc >= item.min && imc <= item.max){
+      info = item.info
+    }
+  })
+  alert(info)
+  if(!info) return
+})
+
 clearBtn.addEventListener("click" , (e) =>{
   e.preventDefault
   cleanInputs()
 })
 
-// Inicialization
-createTable(data)
+
