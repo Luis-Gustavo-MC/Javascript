@@ -67,5 +67,42 @@ const user = {
     }
 }
 
-user.sayUserName()
-user.sayUserNameArrow()
+// user.sayUserName()
+// user.sayUserNameArrow()
+
+// 3 - Filter
+const arr = [1,2,3,4,5,6]
+
+const highNumbers = arr.filter((n) =>{
+    if(n>=3){
+        return n
+    }
+})
+
+console.log(highNumbers)
+
+const users = [
+    {name: "Luis" , available: true},
+    {name: "joao" , available: false},
+    {name: "maria" , available: true},
+    {name: "matheus" , available: false},
+]
+
+const availableUsers = users.filter((user) => user.available)
+
+console.log(availableUsers)
+
+// 4 - Map
+const products = [
+    {name: "Camisa" , price: 10.99, categoria: "Roupas"},
+    {name: "Chaleira eletrica" , price: 150, categoria: "Eletro"},
+    {name: "Fogao" , price: 490, categoria: "Eletro"},
+    {name: "Calça" , price: 87.99, categoria: "Roupas"},
+]
+
+products.map((product) =>{
+    if(product.categoria === "Roupas")
+        product.OnSale = true
+})
+
+console.log(products)
