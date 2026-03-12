@@ -129,3 +129,19 @@ const productDetails = {
 
 const {productName,price,category ,color} = productDetails
 console.log(price)
+
+// 6 - Spread
+const a1 = [1,2,3]
+const a2 = [4,5,6]
+
+const a3 = [...a1, ...a2]
+console.log(a3)
+
+const a4 = [7,8,...a3,9]
+
+const carName = {name: "Gol"}
+const carBrand = {brand: "VW"}
+const otherInfos = {km: 100000, price: 22000}
+
+const car = {...carName, ...carBrand, ...otherInfos}
+console.log(car)
