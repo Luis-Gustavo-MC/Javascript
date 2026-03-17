@@ -52,7 +52,7 @@ const bodyInput = document.querySelector("#body")
 form.addEventListener("submit", (e) =>{
     e.preventDefault()
 
-    axios.post("https://jsonplaceholder.typicode.com/posts",{
+    postsFetch.post("https://jsonplaceholder.typicode.com/posts",{
         body: {title: titleInput.value, body: bodyInput.value, userId:1},
     });
 });
