@@ -17,7 +17,7 @@ const saveTodo = (text) =>{
 
     const doneBtn = document.createElement("button")
     doneBtn.classList.add("finish-todo")
-    doneBtn.innerHTML = '<i class="fa-solid fa-check-double"></i>'
+    doneBtn.innerHTML = '<i class="fa-solid fa-check"></i>'
     todo.appendChild(doneBtn)
     
     const editBtn = document.createElement("button")
@@ -45,5 +45,20 @@ todoForm.addEventListener("submit", (e)=>{
 
     if(inputValue){
         saveTodo(inputValue)
+    }
+})
+
+document.addEventListener("click", (e)=>{
+    const targetEl = e.target
+    const parentEl = targetEl.closest("div")
+
+    if(targetEl.classList.contains("finish-todo")){
+        parentEl.classList.toggle("done")
+    }
+    if(targetEl.classList.contains("remove-todo")){
+        parentEl.remove()
+    }
+    if(targetEl.classList.contains("edit-todo")){
+        console.log("Editou")
     }
 })
